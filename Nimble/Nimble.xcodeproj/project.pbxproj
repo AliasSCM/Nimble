@@ -15,6 +15,15 @@
 		AF0C87341F85465500F7FF4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0C87331F85465500F7FF4A /* Assets.xcassets */; };
 		AF0C87371F85465500F7FF4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0C87351F85465500F7FF4A /* LaunchScreen.storyboard */; };
 		AF0C87421F85465600F7FF4A /* NimbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87411F85465600F7FF4A /* NimbleTests.swift */; };
+		AF0C87551F855C4D00F7FF4A /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C874E1F855C4C00F7FF4A /* Auth.swift */; };
+		AF0C87561F855C4D00F7FF4A /* AuthAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C874F1F855C4C00F7FF4A /* AuthAPIStore.swift */; };
+		AF0C87571F855C4D00F7FF4A /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87501F855C4C00F7FF4A /* AuthInteractor.swift */; };
+		AF0C87581F855C4D00F7FF4A /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87511F855C4C00F7FF4A /* AuthPresenter.swift */; };
+		AF0C87591F855C4D00F7FF4A /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87521F855C4C00F7FF4A /* AuthRouter.swift */; };
+		AF0C875A1F855C4D00F7FF4A /* AuthWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87531F855C4C00F7FF4A /* AuthWorker.swift */; };
+		AF0C875B1F855C4D00F7FF4A /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87541F855C4C00F7FF4A /* SessionModel.swift */; };
+		AF0C875E1F855CDB00F7FF4A /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C875D1F855CDB00F7FF4A /* NetworkOperation.swift */; };
+		AF0C87601F855E5500F7FF4A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C875F1F855E5400F7FF4A /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +51,15 @@
 		AF0C873D1F85465600F7FF4A /* NimbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NimbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0C87411F85465600F7FF4A /* NimbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleTests.swift; sourceTree = "<group>"; };
 		AF0C87431F85465600F7FF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF0C874E1F855C4C00F7FF4A /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		AF0C874F1F855C4C00F7FF4A /* AuthAPIStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthAPIStore.swift; sourceTree = "<group>"; };
+		AF0C87501F855C4C00F7FF4A /* AuthInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		AF0C87511F855C4C00F7FF4A /* AuthPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		AF0C87521F855C4C00F7FF4A /* AuthRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		AF0C87531F855C4C00F7FF4A /* AuthWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthWorker.swift; sourceTree = "<group>"; };
+		AF0C87541F855C4C00F7FF4A /* SessionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
+		AF0C875D1F855CDB00F7FF4A /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		AF0C875F1F855E5400F7FF4A /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		BB650C40F1630EFC000081AF /* Pods_NimbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1823DF4AA0992B2F0EB8381 /* Pods-Nimble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nimble.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nimble/Pods-Nimble.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +127,8 @@
 		AF0C872B1F85465500F7FF4A /* Nimble */ = {
 			isa = PBXGroup;
 			children = (
+				AF0C875C1F855CDB00F7FF4A /* Base */,
+				AF0C874C1F855C4C00F7FF4A /* Scenes */,
 				AF0C872C1F85465500F7FF4A /* AppDelegate.swift */,
 				AF0C872E1F85465500F7FF4A /* ViewController.swift */,
 				AF0C87301F85465500F7FF4A /* Main.storyboard */,
@@ -126,6 +146,37 @@
 				AF0C87431F85465600F7FF4A /* Info.plist */,
 			);
 			path = NimbleTests;
+			sourceTree = "<group>";
+		};
+		AF0C874C1F855C4C00F7FF4A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AF0C874D1F855C4C00F7FF4A /* Auth */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AF0C874D1F855C4C00F7FF4A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AF0C875F1F855E5400F7FF4A /* Login.swift */,
+				AF0C874E1F855C4C00F7FF4A /* Auth.swift */,
+				AF0C874F1F855C4C00F7FF4A /* AuthAPIStore.swift */,
+				AF0C87501F855C4C00F7FF4A /* AuthInteractor.swift */,
+				AF0C87511F855C4C00F7FF4A /* AuthPresenter.swift */,
+				AF0C87521F855C4C00F7FF4A /* AuthRouter.swift */,
+				AF0C87531F855C4C00F7FF4A /* AuthWorker.swift */,
+				AF0C87541F855C4C00F7FF4A /* SessionModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		AF0C875C1F855CDB00F7FF4A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AF0C875D1F855CDB00F7FF4A /* NetworkOperation.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,8 +399,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0C87591F855C4D00F7FF4A /* AuthRouter.swift in Sources */,
 				AF0C872F1F85465500F7FF4A /* ViewController.swift in Sources */,
+				AF0C875E1F855CDB00F7FF4A /* NetworkOperation.swift in Sources */,
+				AF0C875B1F855C4D00F7FF4A /* SessionModel.swift in Sources */,
+				AF0C87571F855C4D00F7FF4A /* AuthInteractor.swift in Sources */,
 				AF0C872D1F85465500F7FF4A /* AppDelegate.swift in Sources */,
+				AF0C87561F855C4D00F7FF4A /* AuthAPIStore.swift in Sources */,
+				AF0C87581F855C4D00F7FF4A /* AuthPresenter.swift in Sources */,
+				AF0C87551F855C4D00F7FF4A /* Auth.swift in Sources */,
+				AF0C87601F855E5500F7FF4A /* Login.swift in Sources */,
+				AF0C875A1F855C4D00F7FF4A /* AuthWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
