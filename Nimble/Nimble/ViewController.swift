@@ -16,16 +16,24 @@ protocol AuthDisplayLogic: class
     func showMainScreen(response : Auth.Login.Response)
 }
 
+//MARK: Display Logic for displaying Survey
+protocol ListSurveyDisplayLogic : class
+{
+    func displayFetchedSurveys(viewModel: ListSurvey.FetchSurvey.ViewModel)
+}
 
-class ViewController: UIViewController , AuthDisplayLogic {
+
+class ViewController: UIViewController , AuthDisplayLogic , ListSurveyDisplayLogic {
 
     
     var authInteractor      : AuthenticateBuisnessLogic?
+    var surveyInteractor    : ListSurveyBusinessLogic?
   
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
     {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setupAuth()
+        setupSurvey()
         
     }
     
@@ -33,6 +41,7 @@ class ViewController: UIViewController , AuthDisplayLogic {
     {
         super.init(coder: aDecoder)
         setupAuth()
+        setupSurvey()
        
     }
     
@@ -56,6 +65,19 @@ class ViewController: UIViewController , AuthDisplayLogic {
         
     }
     
+    // MARK: Setup VIP structure for survey scene
+    private func setupSurvey()
+    {
+        let viewController = self
+        let interactor          =   ListSurveyInteractor()
+        let presenter           =   ListSurveyPresenter()
+        viewController.surveyInteractor   = interactor
+        interactor.presenter        = presenter
+        presenter.viewController    = viewController
+        
+    }
+    
+    
     // MARK: Implement AuthDisplayLogic Protocol
     func showAuthScreen(request : Auth.Login.Request)
     {
@@ -70,8 +92,18 @@ class ViewController: UIViewController , AuthDisplayLogic {
     
     func showMainScreen(response: Auth.Login.Response)
     {
-        SwiftSpinner.hide()
+      
+        var request = ListSurvey.FetchSurvey.Request()
+        request.accessToken = response.session.accessToken
+        surveyInteractor?.fetchSurveysFromRemote(request: request)
     }
+    
+    func displayFetchedSurveys(viewModel: ListSurvey.FetchSurvey.ViewModel)
+    {
+          SwiftSpinner.hide()
+        
+    }
+    
     
     //MARK : VC lifecycle
    override func viewDidLoad()

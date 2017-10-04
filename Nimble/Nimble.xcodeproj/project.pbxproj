@@ -24,6 +24,13 @@
 		AF0C875B1F855C4D00F7FF4A /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87541F855C4C00F7FF4A /* SessionModel.swift */; };
 		AF0C875E1F855CDB00F7FF4A /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C875D1F855CDB00F7FF4A /* NetworkOperation.swift */; };
 		AF0C87601F855E5500F7FF4A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C875F1F855E5400F7FF4A /* Login.swift */; };
+		AF0C87691F85779700F7FF4A /* GetSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87621F85779700F7FF4A /* GetSurvey.swift */; };
+		AF0C876A1F85779700F7FF4A /* ListSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87631F85779700F7FF4A /* ListSurvey.swift */; };
+		AF0C876B1F85779700F7FF4A /* ListSurveyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87641F85779700F7FF4A /* ListSurveyInteractor.swift */; };
+		AF0C876C1F85779700F7FF4A /* ListSurveyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87651F85779700F7FF4A /* ListSurveyPresenter.swift */; };
+		AF0C876D1F85779700F7FF4A /* ListSurveyWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87661F85779700F7FF4A /* ListSurveyWorker.swift */; };
+		AF0C876E1F85779700F7FF4A /* SurveyAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87671F85779700F7FF4A /* SurveyAPIStore.swift */; };
+		AF0C876F1F85779700F7FF4A /* SurveyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87681F85779700F7FF4A /* SurveyModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,13 @@
 		AF0C87541F855C4C00F7FF4A /* SessionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
 		AF0C875D1F855CDB00F7FF4A /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		AF0C875F1F855E5400F7FF4A /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		AF0C87621F85779700F7FF4A /* GetSurvey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSurvey.swift; sourceTree = "<group>"; };
+		AF0C87631F85779700F7FF4A /* ListSurvey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSurvey.swift; sourceTree = "<group>"; };
+		AF0C87641F85779700F7FF4A /* ListSurveyInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSurveyInteractor.swift; sourceTree = "<group>"; };
+		AF0C87651F85779700F7FF4A /* ListSurveyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSurveyPresenter.swift; sourceTree = "<group>"; };
+		AF0C87661F85779700F7FF4A /* ListSurveyWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSurveyWorker.swift; sourceTree = "<group>"; };
+		AF0C87671F85779700F7FF4A /* SurveyAPIStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyAPIStore.swift; sourceTree = "<group>"; };
+		AF0C87681F85779700F7FF4A /* SurveyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyModel.swift; sourceTree = "<group>"; };
 		BB650C40F1630EFC000081AF /* Pods_NimbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1823DF4AA0992B2F0EB8381 /* Pods-Nimble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nimble.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nimble/Pods-Nimble.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +165,7 @@
 		AF0C874C1F855C4C00F7FF4A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				AF0C87611F85779700F7FF4A /* Survey */,
 				AF0C874D1F855C4C00F7FF4A /* Auth */,
 			);
 			path = Scenes;
@@ -177,6 +192,20 @@
 				AF0C875D1F855CDB00F7FF4A /* NetworkOperation.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		AF0C87611F85779700F7FF4A /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				AF0C87621F85779700F7FF4A /* GetSurvey.swift */,
+				AF0C87631F85779700F7FF4A /* ListSurvey.swift */,
+				AF0C87641F85779700F7FF4A /* ListSurveyInteractor.swift */,
+				AF0C87651F85779700F7FF4A /* ListSurveyPresenter.swift */,
+				AF0C87661F85779700F7FF4A /* ListSurveyWorker.swift */,
+				AF0C87671F85779700F7FF4A /* SurveyAPIStore.swift */,
+				AF0C87681F85779700F7FF4A /* SurveyModel.swift */,
+			);
+			path = Survey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,10 +432,17 @@
 				AF0C872F1F85465500F7FF4A /* ViewController.swift in Sources */,
 				AF0C875E1F855CDB00F7FF4A /* NetworkOperation.swift in Sources */,
 				AF0C875B1F855C4D00F7FF4A /* SessionModel.swift in Sources */,
+				AF0C87691F85779700F7FF4A /* GetSurvey.swift in Sources */,
+				AF0C876D1F85779700F7FF4A /* ListSurveyWorker.swift in Sources */,
 				AF0C87571F855C4D00F7FF4A /* AuthInteractor.swift in Sources */,
+				AF0C876E1F85779700F7FF4A /* SurveyAPIStore.swift in Sources */,
 				AF0C872D1F85465500F7FF4A /* AppDelegate.swift in Sources */,
 				AF0C87561F855C4D00F7FF4A /* AuthAPIStore.swift in Sources */,
+				AF0C876C1F85779700F7FF4A /* ListSurveyPresenter.swift in Sources */,
+				AF0C876B1F85779700F7FF4A /* ListSurveyInteractor.swift in Sources */,
 				AF0C87581F855C4D00F7FF4A /* AuthPresenter.swift in Sources */,
+				AF0C876F1F85779700F7FF4A /* SurveyModel.swift in Sources */,
+				AF0C876A1F85779700F7FF4A /* ListSurvey.swift in Sources */,
 				AF0C87551F855C4D00F7FF4A /* Auth.swift in Sources */,
 				AF0C87601F855E5500F7FF4A /* Login.swift in Sources */,
 				AF0C875A1F855C4D00F7FF4A /* AuthWorker.swift in Sources */,
