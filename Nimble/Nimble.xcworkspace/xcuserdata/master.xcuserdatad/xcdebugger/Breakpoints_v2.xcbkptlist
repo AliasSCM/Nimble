@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nimble/ViewController.swift"
-            timestampString = "528841537.738247"
+            timestampString = "528878760.738862"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "showMainScreen(response:)"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
+            landmarkName = "pagerView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,27 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nimble/ViewController.swift"
-            timestampString = "528841537.738696"
+            timestampString = "528878886.57945"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "showMainScreen(response:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Nimble/ViewController.swift"
-            timestampString = "528841537.738998"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "displayFetchedSurveys(viewModel:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -57,29 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nimble/Scenes/Survey/ListSurveyInteractor.swift"
-            timestampString = "528841537.739374"
+            filePath = "Nimble/ViewController.swift"
+            timestampString = "528878907.865699"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "fetchSurveysFromRemote(request:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Nimble/Scenes/Survey/SurveyAPIStore.swift"
-            timestampString = "528841483.473782"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "fetchSurvey(request:completionHandler:)"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "displayFetchedSurveys(viewModel:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

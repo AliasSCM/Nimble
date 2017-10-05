@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SurveyView" customModule="Nimble" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PB4-Q6-afa">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qO-Di-tlk">
+                    <rect key="frame" x="45" y="65" width="285" height="24"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lam-S2-Hn5">
+                    <rect key="frame" x="45" y="573" width="285" height="36"/>
+                    <color key="backgroundColor" red="0.89803922179999995" green="0.32549020649999999" blue="0.31372550129999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="6QM-dd-srm"/>
+                    </constraints>
+                    <state key="normal" title="Take Survey">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="surveyButtonDidPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="yd9-95-0uE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PB4-Q6-afa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1rB-cg-59D"/>
+                <constraint firstItem="PB4-Q6-afa" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="2Ha-se-P5j"/>
+                <constraint firstItem="2qO-Di-tlk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4Ka-pI-mLi"/>
+                <constraint firstItem="2qO-Di-tlk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8De-aA-W32"/>
+                <constraint firstItem="Lam-S2-Hn5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="45" id="8Pe-nK-suA"/>
+                <constraint firstItem="PB4-Q6-afa" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="EC1-By-ZzL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Lam-S2-Hn5" secondAttribute="bottom" constant="58" id="F2w-AZ-Ie0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Lam-S2-Hn5" secondAttribute="trailing" constant="45" id="Lai-33-LoH"/>
+                <constraint firstItem="2qO-Di-tlk" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="45" id="OIC-Mq-Oz5"/>
+                <constraint firstItem="2qO-Di-tlk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="45" id="TDz-A8-qu1"/>
+                <constraint firstItem="Lam-S2-Hn5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rcS-hb-ERC"/>
+                <constraint firstItem="PB4-Q6-afa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="shT-xs-AJr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2qO-Di-tlk" secondAttribute="trailing" constant="45" id="yfb-kz-NE9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bgImagView" destination="PB4-Q6-afa" id="4Z1-Tt-iEe"/>
+                <outlet property="titleLabel" destination="2qO-Di-tlk" id="9xz-g7-F2m"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="86.5"/>
+        </view>
+    </objects>
+</document>

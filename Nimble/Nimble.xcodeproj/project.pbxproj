@@ -31,6 +31,8 @@
 		AF0C876D1F85779700F7FF4A /* ListSurveyWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87661F85779700F7FF4A /* ListSurveyWorker.swift */; };
 		AF0C876E1F85779700F7FF4A /* SurveyAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87671F85779700F7FF4A /* SurveyAPIStore.swift */; };
 		AF0C876F1F85779700F7FF4A /* SurveyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C87681F85779700F7FF4A /* SurveyModel.swift */; };
+		AF6440F31F85EA4E00A039D2 /* SurveyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6440F21F85EA4E00A039D2 /* SurveyView.xib */; };
+		AF6440F51F85F67B00A039D2 /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6440F41F85F67B00A039D2 /* SurveyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		AF0C87661F85779700F7FF4A /* ListSurveyWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListSurveyWorker.swift; sourceTree = "<group>"; };
 		AF0C87671F85779700F7FF4A /* SurveyAPIStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyAPIStore.swift; sourceTree = "<group>"; };
 		AF0C87681F85779700F7FF4A /* SurveyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyModel.swift; sourceTree = "<group>"; };
+		AF6440F21F85EA4E00A039D2 /* SurveyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyView.xib; sourceTree = "<group>"; };
+		AF6440F41F85F67B00A039D2 /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
 		BB650C40F1630EFC000081AF /* Pods_NimbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NimbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1823DF4AA0992B2F0EB8381 /* Pods-Nimble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nimble.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nimble/Pods-Nimble.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +201,7 @@
 		AF0C87611F85779700F7FF4A /* Survey */ = {
 			isa = PBXGroup;
 			children = (
+				AF6440F21F85EA4E00A039D2 /* SurveyView.xib */,
 				AF0C87621F85779700F7FF4A /* GetSurvey.swift */,
 				AF0C87631F85779700F7FF4A /* ListSurvey.swift */,
 				AF0C87641F85779700F7FF4A /* ListSurveyInteractor.swift */,
@@ -204,6 +209,7 @@
 				AF0C87661F85779700F7FF4A /* ListSurveyWorker.swift */,
 				AF0C87671F85779700F7FF4A /* SurveyAPIStore.swift */,
 				AF0C87681F85779700F7FF4A /* SurveyModel.swift */,
+				AF6440F41F85F67B00A039D2 /* SurveyView.swift */,
 			);
 			path = Survey;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF6440F31F85EA4E00A039D2 /* SurveyView.xib in Resources */,
 				AF0C87371F85465500F7FF4A /* LaunchScreen.storyboard in Resources */,
 				AF0C87341F85465500F7FF4A /* Assets.xcassets in Resources */,
 				AF0C87321F85465500F7FF4A /* Main.storyboard in Resources */,
@@ -341,13 +348,17 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Nimble/Pods-Nimble-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +457,7 @@
 				AF0C87551F855C4D00F7FF4A /* Auth.swift in Sources */,
 				AF0C87601F855E5500F7FF4A /* Login.swift in Sources */,
 				AF0C875A1F855C4D00F7FF4A /* AuthWorker.swift in Sources */,
+				AF6440F51F85F67B00A039D2 /* SurveyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
