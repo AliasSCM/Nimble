@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "184"
             endingLineNumber = "184"
-            landmarkName = "pagerView(_:cellForItemAt:)"
+            landmarkName = "pagerViewWillEndDragging(_:targetIndex:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
